@@ -5,38 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://kit.fontawesome.com/46d7d94202.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Does not work on local <script src="https://kit.fontawesome.com/46d7d94202.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
       <input type="checkbox" id="nav-toggle" class="header__toggle" />
       <nav class="header__nav">
         <div class="header__logo">
-          <a href="../">
-            <i
-              class="fa-solid fa-mug-hot fa-flip-horizontal header__logo-icon"
-            ></i
-          ></a>
+          <a href="../"> <i class="fa-solid fa-mug-hot fa-flip-horizontal header__logo-icon"></i></a>
         </div>
         <label for="nav-toggle" class="header__burger">
           <i class="fa-solid fa-bars header__burger-icon"></i>
         </label>
         <ul class="header__nav-list">
           <li>
-            <a
-              href="../about/"
-              class="header__nav-link header__nav-link--active"
-              >ABOUT</a
-            >
+            <a href="../about/" class="header__nav-link header__nav-link--active">ABOUT</a>
           </li>
           <li><a href="../contact/" class="header__nav-link">CONTACT</a></li>
         </ul>
@@ -48,54 +35,30 @@
           <h1 class="hero__title">The Pink<br />Coffee Corner</h1>
           <p class="hero__subtitle">Best coffee in Melbourne</p>
         </div>
-        <img
-          src="../images/hero_image.jpg"
-          alt="cafe pic"
-          class="hero__image"
-        />
+        <img src="../images/hero_image.jpg" alt="cafe pic" class="hero__image" />
       </section>
 
       <section class="about">
         <h1 class="about__title">About Us</h1>
+        <p class="about__text">Welcome to The Pink Coffee Corner - where good coffee meets good vibes.</p>
+        <p class="about__text">Tucked away in the heart of Melbourne, The Pink Coffee Corner is more than just a café - it's a place that feels like home. With its soft pink interiors, lush green plants and warm, welcoming smiles, our space is designed to lift your mood the moment you walk in.</p>
         <p class="about__text">
-          Welcome to The Pink Coffee Corner - where good coffee meets good
-          vibes.
+          Whether you're here to catch up with friends, treat yourself to an almond croissant or get some work done over a flat white, we've got you covered. Our free Wi-Fi and comfy corners make it the perfect spot for study sessions, creative projects or simply zoning out with a good playlist and
+          great coffee.
         </p>
         <p class="about__text">
-          Tucked away in the heart of Melbourne, The Pink Coffee Corner is more
-          than just a café - it's a place that feels like home. With its soft
-          pink interiors, lush green plants and warm, welcoming smiles, our
-          space is designed to lift your mood the moment you walk in.
-        </p>
-        <p class="about__text">
-          Whether you're here to catch up with friends, treat yourself to an
-          almond croissant or get some work done over a flat white, we've got
-          you covered. Our free Wi-Fi and comfy corners make it the perfect spot
-          for study sessions, creative projects or simply zoning out with a good
-          playlist and great coffee.
-        </p>
-        <p class="about__text">
-          Every detail, from the gentle scent of coffee beans to the pastel
-          tones and leafy surroundings, has been crafted to make you feel calm,
-          cosy and inspired. We believe great coffee can turn an ordinary day
-          into something special and that's what we aim for with every cup.
+          Every detail, from the gentle scent of coffee beans to the pastel tones and leafy surroundings, has been crafted to make you feel calm, cosy and inspired. We believe great coffee can turn an ordinary day into something special and that's what we aim for with every cup.
         </p>
       </section>
     </main>
 
     <footer class="footer">
       <div class="footer__brand">
-        <i
-          class="fa-solid fa-mug-hot fa-flip-horizontal footer__brand-icon"
-        ></i>
+        <i class="fa-solid fa-mug-hot fa-flip-horizontal footer__brand-icon"></i>
         <small class="footer__copyright">Copyright 2024</small>
       </div>
       <nav>
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          class="footer__social-link"
-        >
+        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
           <i class="fa-brands fa-square-instagram footer__social-icon"></i>
         </a>
       </nav>

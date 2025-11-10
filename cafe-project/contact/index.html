@@ -5,27 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://kit.fontawesome.com/46d7d94202.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Does not work on local <script src="https://kit.fontawesome.com/46d7d94202.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
       <input type="checkbox" id="nav-toggle" class="header__toggle" />
       <nav class="header__nav">
         <div class="header__logo">
-          <a href="../">
-            <i
-              class="fa-solid fa-mug-hot fa-flip-horizontal header__logo-icon"
-            ></i
-          ></a>
+          <a href="../"> <i class="fa-solid fa-mug-hot fa-flip-horizontal header__logo-icon"></i></a>
         </div>
         <label for="nav-toggle" class="header__burger">
           <i class="fa-solid fa-bars header__burger-icon"></i>
@@ -33,11 +24,7 @@
         <ul class="header__nav-list">
           <li><a href="../about/" class="header__nav-link">ABOUT</a></li>
           <li>
-            <a
-              href="../contact/"
-              class="header__nav-link header__nav-link--active"
-              >CONTACT</a
-            >
+            <a href="../contact/" class="header__nav-link header__nav-link--active">CONTACT</a>
           </li>
         </ul>
       </nav>
@@ -48,35 +35,17 @@
           <h1 class="hero__title">The Pink<br />Coffee Corner</h1>
           <p class="hero__subtitle">Best coffee in Melbourne</p>
         </div>
-        <img
-          src="../images/hero_image.jpg"
-          alt="cafe pic"
-          class="hero__image"
-        />
+        <img src="../images/hero_image.jpg" alt="cafe pic" class="hero__image" />
       </section>
 
       <section class="contact">
         <h1 class="contact__title">Contact Us</h1>
         <form class="contact-form">
           <label for="fname" class="contact-form__label">First Name *</label>
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            class="contact-form__input"
-            placeholder="Enter your first name"
-            required
-          />
+          <input type="text" id="fname" name="fname" class="contact-form__input" placeholder="Enter your first name" required />
 
           <label for="email" class="contact-form__label">Email *</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="contact-form__input"
-            placeholder="Enter your email"
-            required
-          />
+          <input type="email" id="email" name="email" class="contact-form__input" placeholder="Enter your email" required />
 
           <label for="topic" class="contact-form__label">Topic *</label>
           <select id="topic" name="topic" class="contact-form__select" required>
@@ -87,14 +56,7 @@
           </select>
 
           <label for="message" class="contact-form__label">Message *</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            class="contact-form__textarea"
-            placeholder="Type your message here..."
-            required
-          ></textarea>
+          <textarea id="message" name="message" rows="5" class="contact-form__textarea" placeholder="Type your message here..." required></textarea>
 
           <button type="submit" class="contact-form__button">Submit</button>
         </form>
@@ -103,17 +65,11 @@
 
     <footer class="footer">
       <div class="footer__brand">
-        <i
-          class="fa-solid fa-mug-hot fa-flip-horizontal footer__brand-icon"
-        ></i>
+        <i class="fa-solid fa-mug-hot fa-flip-horizontal footer__brand-icon"></i>
         <small class="footer__copyright">Copyright 2024</small>
       </div>
       <nav>
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          class="footer__social-link"
-        >
+        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
           <i class="fa-brands fa-square-instagram footer__social-icon"></i>
         </a>
       </nav>
