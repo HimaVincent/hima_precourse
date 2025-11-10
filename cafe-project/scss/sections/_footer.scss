@@ -1,0 +1,53 @@
+@use '../partials/colors' as colors;
+@use '../partials/mixins' as mixins;
+@use '../partials/media-queries' as q;
+
+.footer {
+  background-color: colors.$color-secondary-light;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: colors.$color-white;
+
+  &__brand {
+    @include mixins.flex-center;
+    gap: 0.5rem;
+    margin-left: 0;
+  }
+
+  &__brand-icon {
+    font-size: 2rem;
+    color: colors.$color-white;
+  }
+
+
+  &__copyright {
+    font-size: 1.2rem;
+    color: colors.$color-white;
+  }
+
+  &__social-link {
+    color: colors.$color-white;
+    @include mixins.hover-color(colors.$color-primary-light);
+  }
+
+  &__social-icon {
+    font-size: 2rem;
+    margin-right: 0;
+  }
+}
+
+@include q.phone {
+  .footer {
+    &__brand {
+      margin-left: 4rem;
+    }
+
+    &__social-icon {
+    margin-right: 4rem;
+  }
+  }
+}

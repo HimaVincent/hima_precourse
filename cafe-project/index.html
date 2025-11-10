@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Pink Coffee Corner</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/46d7d94202.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <input type="checkbox" id="nav-toggle" class="header__toggle" />
+      <nav class="header__nav">
+        <div class="header__logo">
+          <a href="./">
+            <i class="fa-solid fa-mug-hot fa-flip-horizontal header__logo-icon"></i>
+          </a>
+        </div>
+        <label for="nav-toggle" class="header__burger">
+          <i class="fa-solid fa-bars header__burger-icon"></i>
+        </label>
+        <ul class="header__nav-list">
+          <li><a href="./about/" class="header__nav-link">ABOUT</a></li>
+          <li><a href="./contact/" class="header__nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">The Pink<br />Coffee Corner</h1>
+          <p class="hero__subtitle">Best coffee in Melbourne</p>
+          <a href="#reviews" class="hero__cta">See reviews</a>
+        </div>
+        <img src="./images/hero_image.jpg" alt="cafe pic" class="hero__image" />
+      </section>
+
+      <section class="menu">
+        <h1 class="menu__title">Our Menu</h1>
+        <details class="menu__category">
+          <summary>Food</summary>
+          <section>
+            <article class="menu-item">
+              <img src="./images/chocolate_cupcake.jpg" alt="chocolate_cupcake" class="menu-item__image" />
+              <h3 class="menu-item__title">Chocolate Cupcake</h3>
+              <div class="menu-item__info">
+                <div class="menu-item__allergen">
+                  <i class="fa-solid fa-leaf menu-item__allergen-icon"></i>
+                  <span class="menu-item__allergen-text">Vegan</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <img src="./images/donuts.jpg" alt="donuts" class="menu-item__image" />
+              <h3 class="menu-item__title">Donuts</h3>
+              <div class="menu-item__info">
+                <div class="menu-item__allergen">
+                  <i class="fa-solid fa-wheat-awn-circle-exclamation menu-item__allergen-icon"></i>
+                  <span class="menu-item__allergen-text">Gluten Free</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <img src="./images/raspberry_cupcake.jpg" alt="rasberry_cake" class="menu-item__image" />
+              <h3 class="menu-item__title">Rasberry Cupcake</h3>
+              <div class="menu-item__info">
+                <div class="menu-item__allergen">
+                  <i class="fa-solid fa-leaf menu-item__allergen-icon"></i>
+                  <span class="menu-item__allergen-text">Vegan</span>
+                </div>
+                <div class="menu-item__allergen">
+                  <i class="fa-solid fa-wheat-awn-circle-exclamation menu-item__allergen-icon"></i>
+                  <span class="menu-item__allergen-text">Gluten free</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <img src="./images/vanilla_cake.jpg" alt="vanilla_cake" class="menu-item__image" />
+              <h3 class="menu-item__title">Vanilla Cake</h3>
+              <div class="menu-item__info">
+                <div class="menu-item__allergen">
+                  <i class="fa-solid fa-egg menu-item__allergen-icon"></i>
+                  <span class="menu-item__allergen-text">Contains Eggs</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <img src="./images/cheesecake.jpg" alt="cheesecake" class="menu-item__image" />
+              <h3 class="menu-item__title">Cheesecake</h3>
+              <div class="menu-item__info">
+                <div class="menu-item__allergen">
+                  <i class="fa-solid fa-egg menu-item__allergen-icon"></i>
+                  <span class="menu-item__allergen-text">Contains Eggs</span>
+                </div>
+                <div class="menu-item__allergen">
+                  <i class="fa-solid fa-cow menu-item__allergen-icon"></i>
+                  <span class="menu-item__allergen-text">Contains Diary</span>
+                </div>
+              </div>
+            </article>
+          </section>
+        </details>
+
+        <details class="menu__category">
+          <summary>Drinks</summary>
+          <section>
+            <article class="menu-item">
+              <img src="./images/coffee.jpg" alt="flat_white" class="menu-item__image" />
+              <h3 class="menu-item__title">Flat White</h3>
+              <div class="menu-item__info">
+                <div class="menu-item__allergen">
+                  <i class="fa-solid fa-leaf menu-item__allergen-icon"></i>
+                  <span class="menu-item__allergen-text">Vegan Options Available</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <img src="./images/green_smoothie.jpg" alt="green_smoothie" class="menu-item__image" />
+              <h3 class="menu-item__title">Green Smoothie</h3>
+              <div class="menu-item__info">
+                <div class="menu-item__allergen">
+                  <i class="fa-solid fa-leaf menu-item__allergen-icon"></i>
+                  <span class="menu-item__allergen-text">Vegan Options Available</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <img src="./images/peanut_smoothie.jpg" alt="peanut_smoothie" class="menu-item__image" />
+              <h3 class="menu-item__title">Peanut Butter Smoothie</h3>
+              <div class="menu-item__info menu-item__info--two-rows">
+                <div class="menu-item__allergen">
+                  <i class="fa-solid fa-leaf menu-item__allergen-icon"></i>
+                  <span class="menu-item__allergen-text">Vegan Option Available</span>
+                </div>
+                <div class="menu-item__allergen">
+                  <i class="fa-solid fa-hand-dots menu-item__allergen-icon"></i>
+                  <span class="menu-item__allergen-text">Contains Nuts</span>
+                </div>
+              </div>
+            </article>
+          </section>
+        </details>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <h1 class="reviews__title">Reviews</h1>
+        <div class="reviews__container">
+          <article class="review">
+            <blockquote class="review__quote">
+              <i class="fa-solid fa-quote-left review__quote-icon review__quote-icon"></i>
+              The Pink Coffee Corner is amazing! Cozy ambiance, perfect lattes, and friendly staff. The avocado toast is a must-try. Definitely coming back!
+              <i class="fa-solid fa-quote-right review__quote-icon review__quote-icon"></i>
+            </blockquote>
+            <div class="review__author">
+              <cite class="review__author-name"> Sarah L.</cite>
+              <time datetime="2024-07-08" class="review__author-date"> 8th July 2024</time>
+            </div>
+          </article>
+
+          <article class="review">
+            <blockquote class="review__quote">
+              <i class="fa-solid fa-quote-left review__quote-icon review__quote-icon"></i>
+              Great spot for coffee lovers. Smooth flat white and delicious cake. It can get crowded at lunchtime, but worth the visit for the quality and friendly service.
+              <i class="fa-solid fa-quote-right review__quote-icon review__quote-icon"></i>
+            </blockquote>
+            <div class="review__author">
+              <cite class="review__author-name"> John M.</cite>
+              <time datetime="2024-07-08" class="review__author-date"> 8th July 2024</time>
+            </div>
+          </article>
+
+          <article class="review">
+            <blockquote class="review__quote">
+              <i class="fa-solid fa-quote-left review__quote-icon review__quote-icon"></i>
+              The Pink Coffee Corner is my favorite! Perfect mocha, tasty almond croissant, and a welcoming atmosphere. Free Wi-Fi is a bonus. Can't wait to return!
+              <i class="fa-solid fa-quote-right review__quote-icon review__quote-icon"></i>
+            </blockquote>
+            <div class="review__author">
+              <cite class="review__author-name"> Jenny B.</cite>
+              <time datetime="2023-06-04" class="review__author-date"> 4th June 2023</time>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__brand">
+        <i class="fa-solid fa-mug-hot fa-flip-horizontal footer__brand-icon"></i>
+        <small class="footer__copyright">Copyright 2024</small>
+      </div>
+      <nav>
+        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+          <i class="fa-brands fa-square-instagram footer__social-icon"></i>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

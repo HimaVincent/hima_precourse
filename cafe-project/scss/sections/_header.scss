@@ -1,0 +1,90 @@
+@use '../partials/colors' as colors;
+@use '../partials/mixins' as mixins;
+@use '../partials/media-queries' as q;
+
+.header {
+  background-color: colors.$color-white;
+  padding: 1.25rem 1.5rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &__toggle {
+    display: none;
+  }
+
+  &__nav {
+    @include mixins.flex-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &__burger {
+    font-size: 2rem;
+    cursor: pointer;
+    color: colors.$color-primary;
+  }
+
+  &__logo {
+    font-size: 2.5rem;
+
+    a {
+      color: colors.$color-primary;
+      text-decoration: none;
+    }
+  }
+
+  &__logo-icon {
+    @include mixins.hover-scale;
+  }
+
+  &__nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 1.5rem;
+    background-color: colors.$color-white;
+    list-style: none;
+    margin: 0;
+    padding: 1.5rem 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &__nav-link {
+    font-weight: 800;
+    text-decoration: none;
+    color: colors.$color-text-dark;
+    @include mixins.hover-color(colors.$color-primary);
+
+    &--active {
+      color: colors.$color-primary;
+    }
+  }
+
+  &__toggle:checked + &__nav &__nav-list {
+    display: flex;
+  }
+}
+
+@include q.phone {
+
+  .header{
+    padding: 1.25rem 0 1.25rem 5rem;
+  }
+  .header__nav-list {
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 0;
+    margin-right: 5rem;
+  }
+  .header__burger {
+    display: none;
+  }
+}    
+

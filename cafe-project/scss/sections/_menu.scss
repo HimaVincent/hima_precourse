@@ -1,0 +1,115 @@
+@use '../partials/colors' as colors;
+@use '../partials/mixins' as mixins;
+@use '../partials/media-queries' as q;
+
+.menu {
+  background-color: colors.$color-white;
+  padding-bottom: 20px;
+
+  &__title {
+    @include mixins.section-title;
+  }
+
+  &__category {
+    margin: 0 1rem 1.25rem 1rem;
+
+    summary {
+      background-color: colors.$color-primary-light;
+      padding: 10px 0 10px 20px;
+      font-size: 1.3rem;
+      font-weight: 800;
+      text-decoration: none;
+      color: colors.$color-text-dark;
+      cursor: pointer;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      align-items: stretch;
+      margin: 0;
+      padding: 1rem 0 2rem 0;
+    }
+  }
+}
+
+.menu-item {
+  background-color: colors.$color-primary-light;
+  text-align: center;
+  padding: 20px;
+
+  &__image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    color: colors.$color-text-dark;
+  }
+
+  &__info {
+    @include mixins.flex-center;
+    gap: 1rem;
+    white-space: nowrap;
+
+    &--two-rows {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  &__allergen {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  &__allergen-icon {
+    color: colors.$color-secondary;
+    font-size: 1.2rem;
+  }
+
+  &__allergen-text {
+    font-size: 0.9rem;
+    color: colors.$color-text-dark;
+  }
+}
+
+@include q.phone {
+  .menu {
+    &__category {
+      margin: 0 2rem 1.25rem 2rem;
+
+      section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+    }
+  }
+}
+
+@include q.laptop {
+  .menu {
+    &__category {
+      margin: 0 5.6rem 1.25rem 5.6rem;
+
+      section {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+    }
+  }
+
+  .menu-item {
+    &:nth-child(4) {
+      grid-column: 1;
+    }
+
+    &:nth-child(5) {
+      grid-column: 3;
+    }
+  }
+}

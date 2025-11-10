@@ -1,0 +1,80 @@
+@use '../partials/colors' as colors;
+@use '../partials/mixins' as mixins;
+@use '../partials/media-queries' as q;
+
+.hero {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+
+  &__content {
+    background-color: colors.$color-secondary;
+    @include mixins.flex-column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    padding: 2rem 1.5rem;
+  }
+
+  &__title {
+    color: colors.$color-white;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.8rem;
+    color: colors.$color-white;
+  }
+
+  &__cta {
+    width: 95%;
+    background-color: transparent;
+    color: colors.$color-white;
+    border: 3px solid colors.$color-white;
+    padding: 10px 24px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+      color: colors.$color-primary;
+      background-color: colors.$color-white;
+      border: 3px solid colors.$color-primary-light;
+      opacity: 0.8;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    max-height: 500px; 
+    object-fit: cover;
+    order: -1;
+    display: block;
+  }
+}
+
+@include q.laptop {
+  .hero {
+    flex-direction: row;
+
+    &__content {
+      padding-left: 3rem;
+    }
+
+    &__cta {
+      width: 70%;
+    }
+
+    &__image {
+       order: 0;
+      flex: 1;
+      max-height: none;
+      height: 100%;
+    }
+  }
+}
+
+

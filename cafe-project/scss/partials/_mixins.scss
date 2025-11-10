@@ -1,0 +1,69 @@
+@use 'colors' as colors;
+@use 'fonts' as fonts;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin hover-scale {
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+@mixin hover-color($color) {
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin button($bg-color, $hover-color) {
+  background-color: $bg-color;
+  color: colors.$color-white;
+  font-weight: 700;
+  padding: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+@mixin form-input {
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid colors.$color-secondary-light;
+
+  &:hover {
+    border-color: colors.$color-primary;
+  }
+
+   &:focus {
+    outline-color: colors.$color-primary;
+  }
+}
+
+@mixin section-title($color: colors.$color-primary) {
+  text-align: center;
+  color: $color;
+  padding: 1.8rem 0;
+}

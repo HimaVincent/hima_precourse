@@ -1,0 +1,11 @@
+@use 'partials/normalize';
+@use 'partials/colors' as colors;
+@use 'partials/fonts' as fonts;
+@use 'partials/media-queries' as q;
+@use 'partials/mixins' as mixins;
+@use 'partials/base';
+
+@use 'sections/header';
+@use 'sections/hero';
+@use 'sections/about';
+@use 'sections/footer';

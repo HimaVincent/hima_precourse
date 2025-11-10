@@ -1,0 +1,35 @@
+@use '../partials/colors' as colors;
+@use '../partials/mixins' as mixins;
+
+.contact {
+  background-color: colors.$color-white;
+  padding-bottom: 20px;
+
+  &__title {
+    @include mixins.section-title;
+  }
+}
+
+.contact-form {
+  @include mixins.flex-column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  &__label {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: colors.$color-text-dark;
+  }
+
+  &__input,
+  &__select,
+  &__textarea {
+    @include mixins.form-input;
+  }
+
+  &__button {
+    @include mixins.button(colors.$color-secondary, colors.$color-primary);
+    align-self: end;
+  }
+}

@@ -1,0 +1,20 @@
+@use '../partials/colors' as colors;
+@use '../partials/mixins' as mixins;
+
+.about {
+  background-color: colors.$color-white;
+  padding-bottom: 20px;
+
+  &__title {
+    @include mixins.section-title;
+  }
+
+  &__text {
+    padding: 0 1.5rem;
+    font-style: italic;
+    font-weight: 600;
+    color: colors.$color-text-dark;
+  }
+}
+
+
