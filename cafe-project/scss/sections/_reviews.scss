@@ -27,12 +27,18 @@
   &__quote {
     font-weight: 700;
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
+    display: flex;
   }
 
   &__quote-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  &__quote-icon-right {
+    margin-top: auto;
+    align-self: flex-end;
   }
 
   &__author {

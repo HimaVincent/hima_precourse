@@ -433,6 +433,9 @@ h1 {
 .hero__title {
   color: #ffffff;
 }
+.hero__title-text {
+  display: block;
+}
 .hero__subtitle {
   font-size: 1.5rem;
   margin-bottom: 1.8rem;
@@ -444,7 +447,7 @@ h1 {
   color: #ffffff;
   border: 3px solid #ffffff;
   padding: 10px 24px;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -473,7 +476,7 @@ h1 {
     padding-left: 3rem;
   }
   .hero__cta {
-    width: 70%;
+    width: 40%;
   }
   .hero__image {
     order: 0;
@@ -553,8 +556,9 @@ h1 {
   color: #ffffff;
 }
 .footer__copyright {
-  font-size: 1.2rem;
+  font-size: 0.96rem;
   color: #ffffff;
+  padding-top: 0.5rem;
 }
 .footer__social-link {
   color: #ffffff;
